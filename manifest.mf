@@ -1,4 +1,4 @@
-{
+{ 
     "commerceSuiteVersion": "1808.0",
     "extensions": [
         "mcc",
