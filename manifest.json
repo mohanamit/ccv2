@@ -4,13 +4,7 @@
         "modeltacceleratorservices",
         "electronicsstore",
         "customerticketingaddon",
-        "trainingfulfilmentprocess",
-		"trainingcore",
-		"traininginitialdata",
-		"trainingfacades",
-		"trainingtest",
-		"trainingstorefront",
-		"trainingcockpits",
+        "yacceleratorstorefront",
         "backoffice"
     ], 
     
@@ -34,12 +28,12 @@
     "storefrontAddons": [
         {
             "addon": "customerticketingaddon",
-            "storefront": "trainingstorefront",
+            "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "smarteditaddon",
-            "storefront": "trainingstorefront",
+            "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
         }
     ],
@@ -80,15 +74,15 @@
                     "value": "true"
                 },
                 {
-                    "key": "spring.session.trainingstorefront.save",
+                    "key": "spring.session.yacceleratorstorefront.save",
                     "value":"async"
                 },
                 {
-                    "key": "spring.session.trainingstorefront.cookie.name",
+                    "key": "spring.session.yacceleratorstorefront.cookie.name",
                     "value": "JSESSIONID"
                 },
                 {
-                    "key": "spring.session.trainingstorefront.cookie.path",
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
                     "value": "/"
                 },
                 {
@@ -102,7 +96,7 @@
                     "contextPath": "/medias"
                 },
                 {
-                    "name": "trainingstorefront",
+                    "name": "yacceleratorstorefront",
                     "contextPath": ""
                 },
                 {
@@ -133,7 +127,7 @@
         "packages": ["de.hybris.infra.*"]
     },
     "webTests": {
-        "extensions": ["trainingstorefront"],
+        "extensions": ["yacceleratorstorefront"],
         "excludedPackages": ["de.hybris.platform.*"]
     }
 }
