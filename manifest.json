@@ -4,45 +4,16 @@
         "modeltacceleratorservices",
         "electronicsstore",
         "customerticketingaddon",
-        "yacceleratorstorefront",
+        "trainingfulfilmentprocess",
+		"trainingcore",
+		"traininginitialdata",
+		"trainingfacades",
+		"trainingtest",
+		"trainingstorefront",
+		"trainingcockpits",
         "backoffice"
     ], 
-    "useConfig": {
-        "properties": [
-            {
-                "location": "/config/local.properties"
-            },
-            {
-                "location": "/config/local-dev.properties",
-                "persona": "development"
-            },
-            {
-                "location": "/config/local-prod.properties",
-                "persona": "production"
-            },
-            {
-                "location": "/config/local-backoffice-prod.properties",
-                "persona": "production",
-                "aspect": "backoffice"
-            },
-            {
-                "location": "/config/local-backoffice.properties",
-                "aspect": "backoffice"
-            }
-        ],
-        "extensions": {
-            "location": "/config/localextensions.xml",
-            "exclude": [
-                "custom_2_extension_without_dir",
-                "custom_1_extension_with_dir"
-            ]
-        },
-        "solr": {
-            "location": "/config/solr"
-        },
-        "languages" : {
-            "location": "_LANGUAGES_"
-        }},
+    
     "properties": [
         {
             "key": "test.property.1",
@@ -63,12 +34,12 @@
     "storefrontAddons": [
         {
             "addon": "customerticketingaddon",
-            "storefront": "mycustomstorefront",
+            "storefront": "trainingstorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "smarteditaddon",
-            "storefront": "mycustomstorefront",
+            "storefront": "trainingstorefront",
             "template": "yacceleratorstorefront"
         }
     ],
@@ -109,15 +80,15 @@
                     "value": "true"
                 },
                 {
-                    "key": "spring.session.yacceleratorstorefront.save",
+                    "key": "spring.session.trainingstorefront.save",
                     "value":"async"
                 },
                 {
-                    "key": "spring.session.yacceleratorstorefront.cookie.name",
+                    "key": "spring.session.trainingstorefront.cookie.name",
                     "value": "JSESSIONID"
                 },
                 {
-                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "key": "spring.session.trainingstorefront.cookie.path",
                     "value": "/"
                 },
                 {
@@ -131,7 +102,7 @@
                     "contextPath": "/medias"
                 },
                 {
-                    "name": "mycustomstorefront",
+                    "name": "trainingstorefront",
                     "contextPath": ""
                 },
                 {
@@ -162,7 +133,7 @@
         "packages": ["de.hybris.infra.*"]
     },
     "webTests": {
-        "extensions": ["yacceleratorstorefront"],
+        "extensions": ["trainingstorefront"],
         "excludedPackages": ["de.hybris.platform.*"]
     }
 }
