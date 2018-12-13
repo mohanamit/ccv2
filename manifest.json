@@ -1,33 +1,11 @@
-{ 
+{
     "commerceSuiteVersion": "1808.0",
     "extensions": [
-        "mcc",
-		"backoffice",
-		"commercesearchbackoffice",
-		"b2bcommercebackoffice",
-		"commerceservicesbackoffice",
-		"solrfacetsearchbackoffice",
-		"b2badmincockpit",
-		"btgcockpit",
-		"yacceleratorcockpits",
-		"yacceleratorinitialdata",
-		"yacceleratorfulfilmentprocess",
-		"yaddon",
-		"ycommercewebservices",
-		"powertoolsstore",
-		"solrserver",
-		"acceleratorwebservicesaddon",
-		"b2bacceleratoraddon",
-		"commerceorgaddon",
-		"b2bpunchoutaddon",
-		"secureportaladdon",
-		"savedorderformsoccaddon",
-		"b2boccaddon",
-		"accountsummaryaddon",
-		"assistedservicestorefront",
-		"captchaaddon",
-		"customerticketingaddon",
-		"customersupportbackoffice"
+        "modeltacceleratorservices",
+        "electronicsstore",
+        "customerticketingaddon",
+        "yacceleratorstorefront",
+        "backoffice"
     ], 
     "useConfig": {
         "properties": [
@@ -84,40 +62,15 @@
     ],
     "storefrontAddons": [
         {
-	"addon": "b2bacceleratoraddon",
-	"storefront": "yacceleratorstorefront",
-	"template": "yb2bacceleratorstorefront"
-	},
-	{
-		"addon": "commerceorgaddon",
-		"storefront": "yacceleratorstorefront",
-		"template": "yb2bacceleratorstorefront"
-	},
-	{
-		"addon": "secureportaladdon",
-		"storefront": "yacceleratorstorefront",
-		"template": "yb2bacceleratorstorefront"
-	},
-	{
-		"addon": "accountsummaryaddon",
-		"storefront": "yacceleratorstorefront",
-		"template": "yb2bacceleratorstorefront"
-	},
-	{
-		"addon": "assistedservicestorefront",
-		"storefront": "yacceleratorstorefront",
-		"template": "yb2bacceleratorstorefront"
-	},
-	{
-		"addon": "captchaaddon",
-		"storefront": "yacceleratorstorefront",
-		"template": "yb2bacceleratorstorefront"
-	},
-	{
-		"addon": "customerticketingaddon",
-		"storefront": "yacceleratorstorefront",
-		"template": "yb2bacceleratorstorefront"
-	}
+            "addon": "customerticketingaddon",
+            "storefront": "mycustomstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "smarteditaddon",
+            "storefront": "mycustomstorefront",
+            "template": "yacceleratorstorefront"
+        }
     ],
      "aspects": [
         {
