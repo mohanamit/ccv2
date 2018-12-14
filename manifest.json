@@ -1,23 +1,135 @@
 {
-    "commerceSuiteVersion": "1808.0",
+    "commerceSuiteVersion": "1808",
     "extensions": [
-        "modeltacceleratorservices",
-        "electronicsstore",
-        "customerticketingaddon",
         "yacceleratorstorefront",
-        "backoffice"
-    ], 
-    
+        "backoffice",
+		"platformbackoffice",
+		"electronicsstore",
+		"adaptivesearchsolr",
+		"adaptivesearchbackoffice",
+		"adaptivesearchsamplesaddon",
+		"adaptivesearchwebservices",
+		"commerceservicesbackoffice",
+		"solrfacetsearchbackoffice",
+		"solrserver",
+		"yacceleratorinitialdata",
+		"yacceleratorfulfilmentprocess",
+		"yacceleratorstorefront",
+		"ycommercewebservices",
+		"ycommercewebservicestest",
+		"apparelstore",
+		"acceleratorwebservicesaddon",
+		"orderselfserviceaddon",
+		"customersupportbackoffice",
+		"customerticketingaddon",
+		"commerceorgsamplesaddon",
+		"rulebuilderbackoffice",
+		"couponbackoffice",
+		"droolsruleengineservices",
+		"couponfacades",
+		"promotionenginesamplesaddon",
+		"cmswebservices",
+		"smarteditwebservices",
+		"cmssmarteditwebservices",
+		"permissionswebservices",
+		"smarteditaddon",
+		"cmssmartedit",
+		"cmsbackoffice",
+		"multicountrysampledataaddon",
+		"previewpersonalizationweb",
+		"personalizationcmsweb",
+		"personalizationsmartedit",
+		"personalizationpromotionssmartedit",
+		"personalizationsampledataaddon",
+		"personalizationpromotions",
+		"personalizationpromotionsweb",
+		"personalizationservicesbackoffice",
+		"personalizationpromotionsbackoffice",
+		"personalizationcmsbackoffice",
+		"personalizationsearchbackoffice",
+		"personalizationsearchsmartedit",
+		"personalizationsearchweb",
+		"personalizationsearchsamplesaddon",
+		"textfieldconfiguratortemplatebackoffice",
+		"textfieldconfiguratortemplateaddon",
+		"assistedservicestorefront",
+		"assistedservicewebservices",
+		"assistedservicepromotionaddon",
+		"assistedserviceatddtests",
+		"promotionengineatddtests",
+		"textfieldconfiguratortemplateatddtests",
+		"pcmbackofficesamplesaddon"
+    ],
+    "storefrontAddons" : [
+		{
+            "addon": "commerceorgsamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "promotionenginesamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "smarteditaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "textfieldconfiguratortemplateaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "assistedservicestorefront",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "assistedservicepromotionaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "customerticketingaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "orderselfserviceaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "adaptivesearchsamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "multicountrysampledataaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "pcmbackofficesamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "personalizationsearchsamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        }
+    ],
     "properties": [
         {
             "key": "test.property.1",
-            "value": "test.property.1.value",
-            "persona": "production"
+            "value": "test.property.1.value"
         },
         {
             "key": "test.property.2",
-            "value": "test.property.2.value",
-            "persona": "development"
+            "value": "test.property.2.value"
         },
         {
             "key": "test.property.2",
@@ -25,30 +137,17 @@
             "persona": "production"
         }
     ],
-    "storefrontAddons": [
-        {
-            "addon": "customerticketingaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "smarteditaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        }
-    ],
-     "aspects": [
+    "aspects": [
         {
             "name": "backoffice",
             "properties": [
-				{
-                    "key": "test.property.1",
-                    "value": "test.property-1-value-prod-backoffice",
-                    "persona": "production"
+                {
+                    "key": "backoffice.test.property.1",
+                    "value": "backoffice.test.property.1.value"
                 },
                 {
-                    "key": "test.property.2",
-                    "value": "test.property-2-value-backoffice"
+                    "key": "backoffice.test.property.2",
+                    "value": "backoffice.test.property.2.value"
                 }
             ],
             "webapps": [
@@ -65,8 +164,7 @@
                     "contextPath": ""
                 }
             ]
-        },
-        {
+        },{
             "name": "accstorefront",
             "properties": [
                 {
@@ -95,6 +193,10 @@
                     "name": "mediaweb",
                     "contextPath": "/medias"
                 },
+				{
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
                 {
                     "name": "yacceleratorstorefront",
                     "contextPath": ""
@@ -119,15 +221,5 @@
                 }
             ]
         }
-    ],
-    "tests": {
-        "extensions": ["customerticketingaddon",
-        "yacceleratorstorefront"],
-        "annotations": ["UnitTests", "IntegrationTests"],
-        "packages": ["de.hybris.infra.*"]
-    },
-    "webTests": {
-        "extensions": ["yacceleratorstorefront"],
-        "excludedPackages": ["de.hybris.platform.*"]
-    }
-}
+    ]
+ }
