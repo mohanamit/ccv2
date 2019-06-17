@@ -1,0 +1,233 @@
+{
+    "commerceSuiteVersion": "1811.4",
+    "extensions": [
+        "mcc",
+        "adaptivesearchsolr",
+        "adaptivesearchbackoffice",
+        "adaptivesearchsamplesaddon",
+        "adaptivesearchwebservices",
+        "commerceservicesbackoffice",
+        "solrfacetsearchbackoffice",
+        "electronicsstore",
+        "apparelstore",
+        "acceleratorwebservicesaddon",
+        "orderselfserviceaddon",
+        "customersupportbackoffice",
+        "customerticketingaddon",
+        "commerceorgsamplesaddon",
+        "rulebuilderbackoffice",
+        "couponbackoffice",
+        "droolsruleengineservices",
+        "couponfacades",
+        "promotionenginesamplesaddon",
+        "cmswebservices",
+        "smarteditwebservices",
+        "cmssmarteditwebservices",
+        "permissionswebservices",
+        "smarteditaddon",
+        "cmssmartedit",
+        "cmsbackoffice",
+        "multicountrysampledataaddon",
+        "previewpersonalizationweb",
+        "personalizationcmsweb",
+        "personalizationsmartedit",
+        "personalizationpromotionssmartedit",
+        "personalizationsampledataaddon",
+        "personalizationpromotions",
+        "personalizationpromotionsweb",
+        "personalizationservicesbackoffice",
+        "personalizationpromotionsbackoffice",
+        "personalizationcmsbackoffice",
+        "personalizationsearchbackoffice",
+        "personalizationsearchsmartedit",
+        "personalizationsearchweb",
+        "personalizationsearchsamplesaddon",
+        "textfieldconfiguratortemplatebackoffice",
+        "textfieldconfiguratortemplateaddon",
+        "assistedservicestorefront",
+        "assistedservicewebservices",
+        "assistedservicepromotionaddon",
+        "pcmbackofficesamplesaddon",
+        "migrationcore",
+        "migrationfacades",
+        "migrationfulfilmentprocess",
+        "migrationinitialdata",
+        "migrationstorefront",
+        "migrationtest"
+
+    ],
+    "storefrontAddons" : [
+		{
+            "addon": "commerceorgsamplesaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "promotionenginesamplesaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "smarteditaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "textfieldconfiguratortemplateaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "assistedservicestorefront",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "assistedservicepromotionaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "customerticketingaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "orderselfserviceaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "adaptivesearchsamplesaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "multicountrysampledataaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "pcmbackofficesamplesaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "personalizationsearchsamplesaddon",
+            "storefront": "migrationstorefront",
+            "template": "yacceleratorstorefront"
+        }
+    ],
+    "properties": [
+        {
+            "key": "test.property.1",
+            "value": "test.property.1.value"
+        },
+        {
+            "key": "test.property.2",
+            "value": "test.property.2.value"
+        },
+        {
+            "key": "test.property.2",
+            "value": "test.property.2.value.in.prod.only",
+            "persona": "production"
+        },
+        {
+            "key": "multicountrysampledataaddon.import.active",
+            "value": "false"
+        },
+        {
+            "key": "backoffice.cockpitng.legacy.widget.configuration.persistence.enabled",
+            "value": "true"
+        },
+        {
+            "key": "commerceservices.org.unit.path.generation.enabled",
+            "value": "false"
+        }
+    ],
+    "aspects": [
+        {
+            "name": "backoffice",
+            "properties": [
+                {
+                    "key": "backoffice.test.property.1",
+                    "value": "backoffice.test.property.1.value"
+                },
+                {
+                    "key": "backoffice.test.property.2",
+                    "value": "backoffice.test.property.2.value"
+                }
+            ],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "backoffice",
+                    "contextPath": ""
+                }
+            ]
+        },{
+            "name": "accstorefront",
+            "properties": [
+                {
+                    "key": "spring.session.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.save",
+                    "value":"async"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "value": "/"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value":""
+                }
+            ],
+            "webapps": [
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+				{
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "yacceleratorstorefront",
+                    "contextPath": ""
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                }
+            ]
+        },
+        {
+            "name": "backgroundProcessing",
+            "properties": [],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": ""
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                }
+            ]
+        }
+    ]
+ }
